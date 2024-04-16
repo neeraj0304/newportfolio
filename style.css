@@ -21,7 +21,7 @@ body::-webkit-scrollbar{
 }
 body::-webkit-scrollbar-thumb{
   background-color: yellow;
-  border-radius: 3px;
+  border-radius: 5px;
   width: 10px;
 }
 
@@ -41,12 +41,12 @@ body::-webkit-scrollbar-thumb{
   align-items: center;
   text-align: center;
   padding: 20px;
-  background-color: rebeccapurple;
+  /*background-color: rebeccapurple;*/
   height: 17vh;
   
 }
 #right {
-  background-color: white;
+  /*background-color: white;*/
   padding: 0.8vw 0.3vw;
   border-radius: 10px;
   
@@ -59,10 +59,11 @@ body::-webkit-scrollbar-thumb{
   background: transparent;
   padding: 0.5vw;
   border-radius: 10px;
+  border: 2px solid red;
 }
 #right ul button a {
   text-decoration: none;
-  color: red;
+  color: black;
   font-size: 1.3vw;
   font-weight: 600;
 }
@@ -164,12 +165,14 @@ body::-webkit-scrollbar-thumb{
   
 }
 
+
 #btn button img {
   width: 17px;
 }
 
 #btn button:hover img {
   transform: rotate(-135deg);
+  transition: all 0.5s ease;
 }
 
 #photo {
@@ -256,7 +259,8 @@ body::-webkit-scrollbar-thumb{
 #third{
   height: 100vh;
   width: 100%;
-  padding: 20px;
+  
+ 
 }
 #third h1{
   font-size:5vw;
@@ -264,11 +268,181 @@ body::-webkit-scrollbar-thumb{
   padding-top: 2vh;
   text-decoration: underline;
 }
+
+#third #p_wrapper{
+  display: flex;
+  justify-content: center;
+  padding-top: 50px;
+ 
+
+}
 #third #p{
+  box-shadow:1px 0px 20px 15px black;
+  border-radius: 25px;
+}
+
+#third #p #wrapper{
+  display: flex;
+  width: 80vw;
+  height: 60vh;
+  align-items: center;
+  background: transparent;
+  justify-self: center;
+  border-radius: 0px 0px 25px 25px;
+ 
+}
+#third #p #image img{
+  width: 30vw;
+  height:39vh;
+  margin:0px 3vw;
+  border-radius: 15px;
+}
+
+#third #p #content{
+  color: red;
+  font-size: 1.7vw;
+  padding: 0px 10px;
+}
+
+#third #p #top{
+  height: 10vh;
+  background:transparent;
+  display: flex;
+  justify-content: center;
+  border-radius: 25px 25px 0px 0px;
+}
+#third #p #top h1{
+  font-size: 3vw;
+  text-decoration: none;
+  font-weight: 900;
+  padding-top: 5vh;
+  text-decoration: underline;
+}
+
+#third #p #content #links button{
+  background: whitesmoke;
+  border: 3px solid red;
+  border-radius: 10px;
+  padding: .5vw;
+}
+#third #p #content #links button a{
+  text-decoration: none;
+  text-align: center;
+  color: black;
+  font-size: 25px;
+}
+#third #p #content #links button a img{
+  height: 20px;
+  width: 20px;
+  
+}
+
+#third #p #content #links button:hover img{
+  transform: rotate(-135deg);
+  transition: all 0.2s ease;
+}
+
+#fourth{
+  padding:  100px 20px 20px  20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid black;
+}
+
+#fourth #righty p{
+  font-size: 20px;
+  font-weight: 700;
+}
+
+#fourth #righty p a{
+  font-weight: 600;
+}
+#fourth #righty p a:hover{
+  color: purple;
+}
+#fourth #lefty h1{ 
+  font-size: 5vw;
+  font-weight: bold;
+}
+
+#middle{
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 100px;
-  width: 100px;
-  background-color: red;
+  padding: 20px;
+}
+
+.cta {
+  border: none;
+  background: none;
+  cursor: pointer;
+  margin:0px 20px;
+}
+
+.cta span {
+  
+  letter-spacing: 1px;
+font-weight: bolder;
+  padding-right: 10px;
+  text-transform: uppercase;
+}
+
+.cta svg {
+  transform: translateX(-8px);
+  transition: all 0.3s ease;
+}
+
+.cta:hover svg {
+  transform: rotate(-180deg);
+}
+
+.cta:active svg {
+  transform: scale(0.9);
+}
+
+.hover-underline-animation {
+  position: relative;
+  color: black;
+  padding-bottom: 8px;
+}
+
+.hover-underline-animation:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: rgb(232, 24, 232);
+  transform-origin: bottom right;
+  transition: transform .3s ease-out;
+}
+
+.cta:hover .hover-underline-animation:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+#middle button span a{
+  text-decoration: none;
+  font-size: 1.7vw;
+  color: black;
+  font-weight: 600;
+  font-family: "Solway", serif;
+} 
+
+#credits{
+  padding: 20px;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+#credits span{
+  font-family: "Whisper", cursive;
+  font-weight: bold;
+  font-size: 30px;
+  text-decoration: underline;
 }
