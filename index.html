@@ -3,7 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://unpkg.com/sheryjs/dist/Shery.css" />
+
     <link rel="stylesheet" href="style.css">
+
 
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -58,27 +62,52 @@
 
             <div id="header">
 
-                <div id="left">
+                <div id="left" class="magnet">
                     <h1>NS.</h1>
                 </div>
 
-                <div id="right">
+                <div id="right"  >
                    <ul>
                     <button><li><a href="#first">HOME</a></li></button>
                     <button><li><a href="#second">ABOUT</a></li></button>
                     <button><li><a href="#third">PROJECTS</a></li></button>
                     <button><li><a href="#fourth">CONTACT</a></li></button>
-
-                    
                    </ul>
                 </div>
+                <div id="nav">
+                    <input type="checkbox" id="checkbox" />
+        <label for="checkbox" class="toggle">
+          <div class="bars" id="bar1"></div>
+          <div class="bars" id="bar2"></div>
+          <div class="bars" id="bar3"></div>
+        </label>
+        <nav class="navbar">
+          <ul>
+            <li>
+              <button><a href="#hero">HOME</a></button>
+            </li>
+            <li>
+              <button><a href="#about">ABOUT</a></button>
+            </li>
+            <li>
+              <button><a href="#skills">SkILLS</a></button>
+            </li>
+            <li>
+              <button><a href="#project_heading">PROJECTS</a></button>
+            </li>
+            <li>
+              <button><a href="#contact">CONTACT</a></button>
+            </li>
+          </ul>
+        </nav>
+                   </div>
 
             </div>
 
            <div id="intro">
-            <div id="matter">
+            <div id="matter" >
                 <h5>HI ! I AM</h5>
-                <h1>NEERAJ SAHU</h1>
+                <h1  class="magnet text-target ">NEERAJ SAHU</h1>
                 <h2>A TECH ENTHUSIAST</h2>
                 <div id="btn">
                     <button class="btn"><a href="/assests/neeraj resume.pdf">Resume <img src="/assests/img_arrow_black.svg" alt=""></a></button>
@@ -86,7 +115,7 @@
                 </div>
             </div>
 
-            <div id="photo">
+            <div id="photo" class="img">
                 <img src="/assests/me1.jpg" alt="">
             </div>
 
@@ -156,7 +185,7 @@
                         </div>
         
                         <div id="content">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi laborum saepe quaerat fugit aliquam id porro provident nulla doloremque? Impedit, dolorem est totam repellendus maiores architecto natus officiis, voluptate doloremque cum atque magnam alias odio ratione, cupiditate adipisci iure nulla. <br> <br>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi laborum saepe quaerat fugit aliquam id porro provident nulla doloremque? Impedit, dolorem est totam repellendus maiores architecto natus officiis, voluptate doloremque cum atque magnam alias odio ratione, cupiditate adipisci iure nulla. </p>
                             <div id="links">
                                 <button><a target="_blank" href="https://ignition.anits.edu.in/">VISIT <img src="/assests/img_arrow_black.svg" alt=""></a></button>
                                 
@@ -174,6 +203,7 @@
             <div id="lefty">
                 <h1>Let's <br> Connect.</h1>
             </div>
+
 
             <div id="righty">
                 <p>Phone: <a href="tel:+918328663392">+91 83286 63392</a></p> <br>
@@ -267,5 +297,26 @@
         </div>
 
     </div>
+
+
+
+
+
+     <!-- Gsap is needed for Basic Effects -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script> 
+
+<!-- Scroll Trigger is needed for Scroll Effects -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+
+<!-- Three.js is needed for 3d Effects -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/0.155.0/three.min.js"></script>
+
+<!-- ControlKit is needed for Debug Panel-->
+<script src="https://cdn.jsdelivr.net/gh/automat/controlkit.js@master/bin/controlKit.min.js"></script>
+
+    <script  type="text/javascript"  src="https://unpkg.com/sheryjs/dist/Shery.js"></script>
+ <script src="javascript.js"></script>  
 </body>
 </html>
