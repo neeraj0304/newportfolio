@@ -1,306 +1,408 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <link rel="stylesheet" href="https://unpkg.com/sheryjs/dist/Shery.css" /> <!-- Recommended -->
+    
+    
 
-    <link rel="stylesheet" href="https://unpkg.com/sheryjs/dist/Shery.css" />
+    <link rel="stylesheet" href="style.css" />
 
-    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap"
+      rel="stylesheet"
+    />
 
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik+Doodle+Shadow&display=swap"
+      rel="stylesheet"
+    />
 
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Zilla+Slab:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alkatra:wght@400..700&display=swap"
+      rel="stylesheet"
+    />
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Rubik+Doodle+Shadow&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Solway:wght@300;400;500;700;800&display=swap"
+      rel="stylesheet"
+    />
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Zilla+Slab:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sevillana&display=swap"
+      rel="stylesheet"
+    />
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Alkatra:wght@400..700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mystery+Quest&display=swap"
+      rel="stylesheet"
+    />
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Solway:wght@300;400;500;700;800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Sevillana&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playball&display=swap"
+      rel="stylesheet"
+    />
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Mystery+Quest&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Whisper&display=swap"
+      rel="stylesheet"
+    />
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Playball&display=swap" rel="stylesheet">
-
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Whisper&display=swap" rel="stylesheet">
-
-
-<link rel="icon" href="/assests/me1.jpg" type="image/x-icon" />
+    <link rel="icon" href="/assests/me1.jpg" type="image/x-icon" />
 
     <title>NEERAJ'S DEN</title>
-</head>
-<body>
+  </head>
+  <body>
     <div class="main">
-        
-        <div id="first">
 
-            <div id="header">
+      <!-- <div id="progressbar">
+        <div id="topicon">
+          <i class="fa-solid fa-angle-up"></i>
+        </div>
 
-                <div id="left" class="magnet">
-                    <h1>NS.</h1>
-                </div>
+      </div> -->
+     
 
-                <div id="right"  >
-                   <ul>
-                    <button><li><a href="#first">HOME</a></li></button>
-                    <button><li><a href="#second">ABOUT</a></li></button>
-                    <button><li><a href="#third">PROJECTS</a></li></button>
-                    <button><li><a href="#fourth">CONTACT</a></li></button>
-                   </ul>
-                </div>
-                <div id="nav">
-                    <input type="checkbox" id="checkbox" />
-        <label for="checkbox" class="toggle">
-          <div class="bars" id="bar1"></div>
-          <div class="bars" id="bar2"></div>
-          <div class="bars" id="bar3"></div>
-        </label>
-        <nav class="navbar">
-          <ul>
-            <li>
-              <button><a href="#first">HOME</a></button>
-            </li>
-            <li>
-              <button><a href="#second">ABOUT</a></button>
-            </li>
-            <li>
-              <button><a href="#third">PROJECTS</a></button>
-            </li>
-            <li>
-              <button><a href="#fourth">CONTACT</a></button>
-            </li>
+      <div id="first">
+        <div id="header">
+          <div id="left" >
+            <h1 class="magnet">NS.</h1>
+
+           
+
+          </div>
+
+          <div id="right">
+            <ul>
+              <button>
+                <li><a href="#first">HOME</a></li>
+              </button>
+              <button>
+                <li><a href="#second">ABOUT</a></li>
+              </button>
+              <button>
+                <li><a href="#third">PROJECTS</a></li>
+              </button>
+              <button>
+                <li><a href="#fourth">CONTACT</a></li>
+              </button>
+            </ul>
+
             
-          </ul>
-        </nav>
-                   </div>
 
+          </div>
+          <div id="nav">
+            <input type="checkbox" id="checkbox" />
+            <label for="checkbox" class="toggle">
+              <div class="bars" id="bar1"></div>
+              <div class="bars" id="bar2"></div>
+              <div class="bars" id="bar3"></div>
+            </label>
+            <nav class="navbar">
+              <ul>
+                <li>
+                  <button><a href="#first">HOME</a></button>
+                </li>
+                <li>
+                  <button><a href="#second">ABOUT</a></button>
+                </li>
+                <li>
+                  <button><a href="#third">PROJECTS</a></button>
+                </li>
+                <li>
+                  <button><a href="#fourth">CONTACT</a></button>
+                </li>
+              </ul>
+            </nav>
+          </div>
+
+          
+
+
+        </div>
+
+        
+
+
+        <div id="intro">
+          <div id="matter">
+            <h5>HI ! I AM</h5>
+            <h1 class="magnet  text-target">  <span>N</span><span>E</span><span>E</span><span>R</span><span>A</span><span>J</span>  <span>S</span><span>A</span><span>H</span><span>U</span> </h1>
+            <h2>A TECH ENTHUSIAST</h2>
+            <div id="btn">
+              <button class="btn">
+                <a href="/assests/neeraj resume.pdf"
+                  >Resume <img src="/assests/img_arrow_black.svg" alt=""
+                /></a>
+              </button>
             </div>
+          </div>
 
-           <div id="intro">
-            <div id="matter" >
-                <h5>HI ! I AM</h5>
-                <h1  class="magnet text-target ">NEERAJ SAHU</h1>
-                <h2>A TECH ENTHUSIAST</h2>
-                <div id="btn">
-                    <button class="btn"><a href="/assests/neeraj resume.pdf">Resume <img src="/assests/img_arrow_black.svg" alt=""></a></button>
-                    
-                </div>
-            </div>
-
-            <!--<div id="photo" class="img">
+          <!--<div id="photo" class="img">
                 <img src="/assests/me1.jpg" alt="">
             </div>-->
-
-           </div>
-
         </div>
+      </div>
 
-        <div id="second">
-            <div id="pic">
-                <img src="/assests/me1.jpg" alt=""> 
+      <div id="second">
+        <div id="pic">
+          <img  class="img" src="/assests/me1.jpg" alt="" />
+        </div>
+        <div id="sodhi">
+          <h1>I am,</h1>
+          <br />
+          <p>
+            a Mechanical Engineering student, deeply passionate about
+            automobiles and fascinated by the impact of web and mobile
+            applications on our daily lives. My interest in technology sparked
+            in 2016 when I first experienced smartphone applications. I was
+            mesmerized by their functionality and intrigued by how they work.
+            Since then, my fascination has only grown.I love to make single page
+            web Applications(S.P.A) .My goal is to develop user-friendly and
+            convenient web and mobile applications. <br /><br />
+            I'm good with:
+          </p>
+          <br />
+          <div id="techstack">
+            <div id="language">
+              <div class="c">
+                <img
+                  src="/assests/languages/icons8-c-programming.svg"
+                  alt="c language"
+                />
+                <h3>C Programming</h3>
+              </div>
+
+              <div class="c">
+                <img
+                  src="/assests/languages/icons8-python (1).svg"
+                  alt="c language"
+                />
+                <h3>Python Programming</h3>
+              </div>
+
+              <div class="c">
+                <img
+                  src="/assests/languages/icons8-html.svg"
+                  alt="c language"
+                />
+                <h3>HTML 5</h3>
+              </div>
+
+              <div class="c">
+                <img src="/assests/languages/icons8-css.svg" alt="c language" />
+                <h3>CSS 3</h3>
+              </div>
+
+              <div class="c">
+                <img
+                  src="/assests/languages/icons8-javascript.svg"
+                  alt="c language"
+                />
+                <h3>JavaScript</h3>
+              </div>
+
+              <div class="c">
+                <img
+                  src="/assests/languages/images-removebg-preview.png"
+                  alt="c language"
+                />
+                <h3>GSAP</h3>
+              </div>
             </div>
-            <div id="sodhi">
-                <h1 >I am,</h1><br>
-                <p >
-                 a Mechanical Engineering student, deeply passionate about automobiles and fascinated by the impact of web and mobile applications on our daily lives. My interest in technology sparked in 2016 when I first experienced smartphone applications. I was mesmerized by their functionality and intrigued by how they work. Since then, my fascination has only grown.I love to make single page  web Applications(S.P.A) .My goal is to develop user-friendly and convenient web and mobile applications. <br><br> I'm good with:
-                </p><br>
-                <div id="techstack">
-                    <div id="language">
-                        <div class="c">
-                            <img src="/assests/languages/icons8-c-programming.svg" alt="c language">
-                            <h3>C Programming</h3>
-                        </div>
+          </div>
+        </div>
+      </div>
 
-                        <div class="c">
-                            <img src="/assests/languages/icons8-python (1).svg" alt="c language">
-                            <h3>Python Programming</h3>
-                        </div>
+      <div id="third">
+        <h1>projects</h1>
+        <div id="p_wrapper">
+          <div id="p">
+            <div id="top"><h1>IGNITION 2K24</h1></div>
 
-                        <div class="c">
-                            <img src="/assests/languages/icons8-html.svg" alt="c language">
-                            <h3>HTML 5</h3>
-                        </div>
+            <div id="wrapper">
+              <div id="image">
+                <img src="/assests/techfest.png" alt="tech fest 2k24" />
+              </div>
 
-                        <div class="c">
-                            <img src="/assests/languages/icons8-css.svg" alt="c language">
-                            <h3>CSS 3</h3>
-                        </div>
-
-                        <div class="c">
-                            <img src="/assests/languages/icons8-javascript.svg" alt="c language">
-                            <h3>JavaScript</h3>
-                        </div>
-
-                        <div class="c">
-                            <img src="/assests/languages/images-removebg-preview.png" alt="c language">
-                            <h3>GSAP</h3>
-                        </div>
-
-                        
-                        
-
-                    </div>
+              <div id="content">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Eligendi laborum saepe quaerat fugit aliquam id porro
+                  provident nulla doloremque? Impedit, dolorem est totam
+                  repellendus maiores architecto natus officiis, voluptate
+                  doloremque cum atque magnam alias odio ratione, cupiditate
+                  adipisci iure nulla.
+                </p>
+                <div id="links">
+                  <button>
+                    <a target="_blank" href="https://ignition.anits.edu.in/"
+                      >VISIT <img src="/assests/img_arrow_black.svg" alt=""
+                    /></a>
+                  </button>
                 </div>
-
+              </div>
             </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="fourth">
+        <div id="lefty">
+          <h1>
+            Let's <br />
+            Connect.
+          </h1>
         </div>
 
-        <div id="third">
-            <h1>projects</h1>
-            <div id="p_wrapper">
-                <div id="p">
-                    <div id="top"><h1>IGNITION 2K24</h1></div>
-                    
-                    <div id="wrapper">
-                        <div id="image">
-                            <img src="/assests/techfest.png" alt="tech fest 2k24">
-                        </div>
-        
-                        <div id="content">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi laborum saepe quaerat fugit aliquam id porro provident nulla doloremque? Impedit, dolorem est totam repellendus maiores architecto natus officiis, voluptate doloremque cum atque magnam alias odio ratione, cupiditate adipisci iure nulla. </p>
-                            <div id="links">
-                                <button><a target="_blank" href="https://ignition.anits.edu.in/">VISIT <img src="/assests/img_arrow_black.svg" alt=""></a></button>
-                                
-                            </div>
-                        </div>
-                    </div>
-                
-
-                </div>
-            </div>
+        <div id="righty">
+          <p>Phone: <a href="tel:+918328663392">+91 83286 63392</a></p>
+          <br />
+          <p>
+            Email:
+            <a href="mailto:neerajsahu6644@gmail.com"
+              >neerajsahu6644@gmail.com</a
+            >
+          </p>
         </div>
-        
-        <div id="fourth">
+      </div>
 
-            <div id="lefty">
-                <h1>Let's <br> Connect.</h1>
-            </div>
+      <div id="middle">
+        <button class="cta">
+          <span class="hover-underline-animation"
+            ><a href="https://www.instagram.com/_neeraj_04_/">instagram</a></span
+          >
+          <svg
+            id="arrow-horizontal"
+            xmlns="http://www.w3.org/2000/svg"
+            width="30"
+            height="10"
+            viewBox="0 0 46 16"
+          >
+            <path
+              id="Path_10"
+              data-name="Path 10"
+              d="M8,0,6.545,1.455l5.506,5.506H-30V9.039H12.052L6.545,14.545,8,16l8-8Z"
+              transform="translate(30)"
+            ></path>
+          </svg>
+        </button>
 
+        <button class="cta">
+          <span class="hover-underline-animation"><a href="https://twitter.com/_Neeraj_04_">twitter</a></span>
+          <svg
+            id="arrow-horizontal"
+            xmlns="http://www.w3.org/2000/svg"
+            width="30"
+            height="10"
+            viewBox="0 0 46 16"
+          >
+            <path
+              id="Path_10"
+              data-name="Path 10"
+              d="M8,0,6.545,1.455l5.506,5.506H-30V9.039H12.052L6.545,14.545,8,16l8-8Z"
+              transform="translate(30)"
+            ></path>
+          </svg>
+        </button>
 
-            <div id="righty">
-                <p>Phone: <a href="tel:+918328663392">+91 83286 63392</a></p> <br>
-                <p>Email: <a href="mailto:neerajsahu6644@gmail.com">neerajsahu6644@gmail.com</a></p>
+        <button class="cta">
+          <span class="hover-underline-animation"
+            ><a href="www.linkedin.com/in/neeraj-sahu3636">linked in</a></span
+          >
+          <svg
+            id="arrow-horizontal"
+            xmlns="http://www.w3.org/2000/svg"
+            width="30"
+            height="10"
+            viewBox="0 0 46 16"
+          >
+            <path
+              id="Path_10"
+              data-name="Path 10"
+              d="M8,0,6.545,1.455l5.506,5.506H-30V9.039H12.052L6.545,14.545,8,16l8-8Z"
+              transform="translate(30)"
+            ></path>
+          </svg>
+        </button>
 
-            </div>
+        <button class="cta">
+          <span class="hover-underline-animation"><a href="https://github.com/neeraj0304">github</a></span>
+          <svg
+            id="arrow-horizontal"
+            xmlns="http://www.w3.org/2000/svg"
+            width="30"
+            height="10"
+            viewBox="0 0 46 16"
+          >
+            <path
+              id="Path_10"
+              data-name="Path 10"
+              d="M8,0,6.545,1.455l5.506,5.506H-30V9.039H12.052L6.545,14.545,8,16l8-8Z"
+              transform="translate(30)"
+            ></path>
+          </svg>
+        </button>
+      </div>
 
-
+      <div id="credits">
+        <div style="padding-top: 10px; font-weight: 550" id="copyright">
+          Built by : <span>Neeraj sahu</span> :)
         </div>
-
-        <div id="middle">
-            <button class="cta">
-                <span class="hover-underline-animation"><a href="">instagram</a></span>
-                <svg
-                  id="arrow-horizontal"
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="30"
-                  height="10"
-                  viewBox="0 0 46 16"
-                >
-                  <path
-                    id="Path_10"
-                    data-name="Path 10"
-                    d="M8,0,6.545,1.455l5.506,5.506H-30V9.039H12.052L6.545,14.545,8,16l8-8Z"
-                    transform="translate(30)"
-                  ></path>
-                </svg>
-              </button>
-
-              <button class="cta">
-                <span class="hover-underline-animation"><a href="">twitter</a></span>
-                <svg
-                  id="arrow-horizontal"
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="30"
-                  height="10"
-                  viewBox="0 0 46 16"
-                >
-                  <path
-                    id="Path_10"
-                    data-name="Path 10"
-                    d="M8,0,6.545,1.455l5.506,5.506H-30V9.039H12.052L6.545,14.545,8,16l8-8Z"
-                    transform="translate(30)"
-                  ></path>
-                </svg>
-              </button>
-
-              <button class="cta">
-                <span class="hover-underline-animation"><a href="">linked in</a></span>
-                <svg
-                  id="arrow-horizontal"
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="30"
-                  height="10"
-                  viewBox="0 0 46 16"
-                >
-                  <path
-                    id="Path_10"
-                    data-name="Path 10"
-                    d="M8,0,6.545,1.455l5.506,5.506H-30V9.039H12.052L6.545,14.545,8,16l8-8Z"
-                    transform="translate(30)"
-                  ></path>
-                </svg>
-              </button>
-
-              <button class="cta">
-                <span class="hover-underline-animation"><a href="">github</a></span>
-                <svg
-                  id="arrow-horizontal"
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="30"
-                  height="10"
-                  viewBox="0 0 46 16"
-                >
-                  <path
-                    id="Path_10"
-                    data-name="Path 10"
-                    d="M8,0,6.545,1.455l5.506,5.506H-30V9.039H12.052L6.545,14.545,8,16l8-8Z"
-                    transform="translate(30)"
-                  ></path>
-                </svg>
-              </button>
-
-              
-              
-        </div>
-
-        <div id="credits">
-            
-            <div style="padding-top: 10px;font-weight: 550;" id="copyright">Built by : <span >Neeraj sahu</span> :)</div>
-        </div>
-
+      </div>
     </div>
 
+    
+    
+    
+    
+    
+    
+    <!--  Gsap is needed for Basic Effects -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
 
+    <!-- Scroll Trigger is needed for Scroll Effects -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
 
+    
 
+    <script  type="text/javascript"  src="https://unpkg.com/sheryjs/dist/Shery.js"></script> <!-- Recommended -->
 
-
- <script src="javascript.js"></script>  
-</body>
+    
+    
+    
+    <script src="javascript.js"></script>
+  </body>
 </html>

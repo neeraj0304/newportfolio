@@ -15,7 +15,7 @@ body {
   scroll-behavior: smooth;
 }
 
-body::-webkit-scrollbar{
+/* body::-webkit-scrollbar{
   
   width: 10px;
   
@@ -23,8 +23,8 @@ body::-webkit-scrollbar{
 body::-webkit-scrollbar-thumb{
   background-color: black;
   border-radius: 5px;
-  width: 10px;
-}
+  
+} */
 
 .main {
   width: 100%;
@@ -35,6 +35,8 @@ body::-webkit-scrollbar-thumb{
   height: 100vh;
 
 }
+
+
 
 #header {
   display: flex;
@@ -63,6 +65,7 @@ body::-webkit-scrollbar-thumb{
   padding: 10px;
   border-radius: 10px;
   border: 2px solid red;
+  cursor: pointer;
 }
 
 #right ul button {
@@ -93,6 +96,7 @@ body::-webkit-scrollbar-thumb{
  #right ul button:hover a {
   color: #fff;
   transition: all 1s;
+  
  }
  
  #right ul button:before {
@@ -128,6 +132,7 @@ body::-webkit-scrollbar-thumb{
   font-family: "Playball", cursive;
 }
 
+
 #intro {
   padding: 20px;
   display: flex;
@@ -159,6 +164,10 @@ body::-webkit-scrollbar-thumb{
   font-family: "Rubik Doodle Shadow", system-ui;
 padding: 0px 10px;
   letter-spacing: .5vw;
+}
+
+#intro #matter h1 span{
+  display: inline-block;
 }
 
 #intro #matter h2 {
@@ -269,7 +278,7 @@ padding: 0px 10px;
 
 #second #sodhi{
   width: 70%;
-  padding-left: 12vw;
+  padding-left: 3vw;
 }
 
 
@@ -337,7 +346,7 @@ padding: 0px 10px;
 
 }
 #third #p{
-  box-shadow:1px 0px 20px 15px black;
+  box-shadow:0px 0px 10px 5px black;
   border-radius: 25px;
 }
 
@@ -608,7 +617,7 @@ font-weight: bolder;
     top: 0;
     left: 0;
     width: 100%;
-    height: 75%;
+    height: 100%;
     background-color: #b1ddf1;
     display: flex;
     justify-content: center;
@@ -775,6 +784,8 @@ font-weight: bolder;
     width: 10px;
 
   }
+  #third #p {
+    box-shadow: 0px 0px 10px 3px black;}
 }
 
 
@@ -785,13 +796,13 @@ font-weight: bolder;
   }
   #second #sodhi{
     width: fit-content;
-    padding: 0vw;
+    padding: 20px 0px ;
   }
   #techstack #language .c h3{
     font-size: 13px;
   }
   #second #sodhi p{
-    font-size: 20px;
+    font-size: 21px;
   }
   #second #sodhi h1{
     font-size: 35px;
@@ -800,9 +811,9 @@ font-weight: bolder;
     #second  #pic img {
     width: 100vw;
     height: 70vh;
-    border-radius: 15%;
-    filter: drop-shadow(5px 5px 30px purple);
-    padding: 30px 10vw;
+    border-radius: 50px;
+    filter: drop-shadow(1px 1px 10px purple);
+    padding: 30px;
    
 }
 }
@@ -812,25 +823,39 @@ font-weight: bolder;
   #first #photo img {
       display: none;
     }
-    #intro #matter h1{
-      font-size: 9vh;
-    }
+    
     #intro #matter h5 {
       font-size: 3vh;
     }
     #intro #matter h2{
-      font-size: 4vh;
+      font-size: 3vh;
     }
     #intro #matter{
       text-align: center;
-      padding-top: 1vh;
+      
     }
     #intro{
       display: grid;
+      align-items: center;
+      justify-content: center;
     }
     #left h1 {
-      -webkit-text-stroke: .5vw;
+      -webkit-text-stroke: .3vh black;
     }
+    #header{
+      height: 70px;
+    }
+    #intro #matter button a{
+      font-size: 20px;
+    }
+    #btn button img {
+      width: 13px;
   }
   
+  #intro #matter button{
+    padding: 10px;
+  }
 
+  }
+  
+  
