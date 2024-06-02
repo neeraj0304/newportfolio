@@ -14,6 +14,11 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
+
+
+
+
+
 var timePeriodInMs = 5000;
 
 setTimeout(function() 
@@ -23,7 +28,22 @@ setTimeout(function()
 timePeriodInMs);
 
 
-function breakTheText() {
+
+/* var overflows = 5000;
+
+setTimeout(function() 
+{ 
+    document.getElementById("black").style.display="inline"; 
+}, 
+overflows); */
+
+
+
+
+
+
+
+/* function breakTheText() {
 
   var h1 = document.querySelector(" p")
   
@@ -44,7 +64,7 @@ function breakTheText() {
   }
 
 
-  breakTheText()
+  breakTheText() */
 
 
 
@@ -71,10 +91,14 @@ Shery.makeMagnet(".magnet" /* Element to target.*/, {
 
 
 let tl = gsap.timeline();
+ 
 
 
 
-
+ tl.to("#loaderfirst h1,#loaderfirst h2",{
+  textStroke: '2px red',
+  duration:2,
+ },'a')
  tl.from("#loaderfirst h1",{
    y:-200,
    opacity:0,
@@ -82,6 +106,7 @@ let tl = gsap.timeline();
    duration:2,
    
 },'a')
+
 
 tl.from("#loaderfirst h2",{
   y:200,
@@ -109,21 +134,12 @@ tl.to("#loadersecond #bottom",{
 
 
 
-/* let mm=gsap.matchMedia();
- mm.add("(max-width:900px)",()=>{
-  tl.from(".toggle",{
-    y:-400,
-    opacity:0,
-    
-    duration:1,
-  })
- }) */
+
 
    tl.from("#left h1", {
   y: -50,
   opacity: 0,
 
-  duration:.1,
 });
 
 let nn = gsap.matchMedia();
@@ -287,35 +303,28 @@ tl.from(
   "-=1"
 );
 
-a.add("(min-width:1025px)", () => {
-  tl.from("#middle button,#credits", {
-    y: 200,
-    opacity: 0,
-    scale: 0,
-    stagger: 0.1,
-    scrollTrigger: {
-      trigger: "#third",
-      scrub: true,
-      start: "100% 50%",
-      end: "120% 50%",
-    },
-  });
-});
 
-a.add("(max-width:1024px)", () => {
+
+
+   
   tl.from("#middle button,#credits", {
-    y: 200,
+    y: 30,
     opacity: 0,
     scale: 0,
-    stagger: 0.1,
+    stagger: .1,
     scrollTrigger: {
-      trigger: "#third",
+      trigger: "#middle",
       scrub: true,
-      start: "85% 50%",
-      end: "160% 50%",
+      start: "-150% 70%",
+      end: "130% 90%",
+      
     },
   });
-});
+ 
+
+
+
+   
 
 
 
