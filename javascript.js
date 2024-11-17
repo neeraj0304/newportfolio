@@ -16,9 +16,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
-
-
-
 var timePeriodInMs = 5000;
 
 setTimeout(function() 
@@ -43,28 +40,28 @@ overflows); */
 
 
 
-/* function breakTheText() {
+//  function breakTheText() {
 
-  var h1 = document.querySelector(" p")
+//   var h1 = document.querySelector(" p")
   
-  var h1Text = h1.textContent
+//   var h1Text = h1.textContent
   
-  var splittedText = h1Text.split("")
+//   var splittedText = h1Text.split(" ")
  
-  var clutter = ""
+//   var clutter = " "
   
-  splittedText.forEach(function (elem) {
+//   splittedText.forEach(function (elem) {
  
-  clutter += `<span>${elem}</span>`
+//   clutter += `<span>${elem}</span>`
   
-  })
+//   })
  
-  h1.innerHTML = clutter
+//   h1.innerHTML = clutter
  
-  }
+//   }
 
 
-  breakTheText() */
+//   breakTheText() 
 
 
 
@@ -232,7 +229,7 @@ tl.from("#second h1, #second p , #second .c ",{
 
 a.add("(min-width:1025px)", () => {
   tl.from("#third  h1", {
-    x: -1000,
+    y:100,
     opacity: 0,
     scale: 0,
     scrollTrigger: {
@@ -252,7 +249,7 @@ a.add("(max-width:1024px)", () => {
     scale: 0,
     scrollTrigger: {
       trigger: "#third h1",
-      
+      markers: true,
       start: "0% 100%",
       end: "50% 120%", 
       scrub: 1,
@@ -266,9 +263,21 @@ tl.from("#third #p_wrapper", {
   x: 1000,
   scrollTrigger: {
     trigger: "#second",
-
+    
     start: "90% 50%",
-    end: "120% 50%",
+    end: "140% 30%",
+    scrub: 1,
+  },
+});
+tl.from("#third #p_wrapper_second", {
+  scale: 0,
+  opacity: 0,
+  x: -1000,
+  scrollTrigger: {
+    trigger: "#second",
+    
+    start: "200% 50%",
+    end: "250% 30%",
     scrub: 1,
   },
 });
@@ -277,12 +286,13 @@ tl.from("#fourth  #lefty h1", {
   x: 2000,
   y: -350,
   scale: 0,
-  opacity: 1,
+  opacity: 0,
   scrollTrigger: {
     trigger: "#third",
     scrub: true,
-    start: "20% 50%",
+    start: "70% 50%",
     end: "120% 50%",
+    
   },
 });
 
@@ -292,16 +302,20 @@ tl.from(
     x: -2000,
     y: -350,
     scale: 0,
-    opacity: 1,
+    opacity: 0,
     scrollTrigger: {
       trigger: "#third",
       scrub: true,
-      start: "20% 50%",
+      start: "70% 50%",
       end: "120% 50%",
     },
   },
   "-=1"
 );
+
+
+
+
 
 
 
@@ -321,10 +335,22 @@ tl.from(
     },
   });
  
-
-
-
-   
+  
+  
+  
+  
+  tl.from(chars, {
+    duration: 0.8,
+    opacity: 0,
+    scale: 0,
+    y: 80,
+    rotationX: 180,
+    transformOrigin: "0% 50% -50",
+    ease: "back",
+    stagger: 0.01
+  });
+  
+  
 
 
 

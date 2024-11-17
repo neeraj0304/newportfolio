@@ -10,7 +10,7 @@ body {
   /*background-image: url(/assests/bg1.png);
   background-repeat: no-repeat;
   background-size: cover;*/
-
+ background: #D8D3D6;
   overflow-x: hidden;
   scroll-behavior: smooth;
  
@@ -37,7 +37,10 @@ body::-webkit-scrollbar-thumb{
   
 } 
 
-
+.main h1::selection{
+  color: yellow;
+  background: #000;
+}
 
 
 #animation{
@@ -187,6 +190,11 @@ body::-webkit-scrollbar-thumb{
   font-family: "Playball", cursive;
 }
 
+#left h1::selection{
+  color: yellow;
+  background: #000;
+}
+
 #intro {
   padding: 20px;
   display: flex;
@@ -219,6 +227,12 @@ body::-webkit-scrollbar-thumb{
 
 #intro #matter h1 span {
   display: inline-block;
+
+}
+
+#intro #matter h1 span::selection{
+  color: yellow;
+  background: #000;
 }
 
 #intro #matter h2 {
@@ -319,6 +333,7 @@ body::-webkit-scrollbar-thumb{
   -webkit-mask-size: contain;*/
   padding-left: 5px;
   border-radius: 20px;
+  filter: drop-shadow(1px 1px 10px purple);
 }
 
 #second #sodhi {
@@ -330,9 +345,15 @@ body::-webkit-scrollbar-thumb{
 #second #sodhi p {
   /* font-family: "Sevillana", cursive; */
   font-family: "Barlow Condensed", sans-serif;
+  
   font-weight: 800;
   font-size: 2vw;
   display: inline-block;
+ 
+}
+#second #sodhi p span {
+
+padding-right: 5px;
 }
 
 #second #sodhi h1  {
@@ -341,6 +362,8 @@ body::-webkit-scrollbar-thumb{
   font-weight: bolder;
   display: inline-block;
 }
+
+
 
 #techstack {
   display: flex;
@@ -381,6 +404,12 @@ body::-webkit-scrollbar-thumb{
   padding-top: 2vh;
   text-decoration: underline;
   font-family: "Cactus Classical Serif", serif;
+}
+
+#third #p_wrapper_second {
+  display: flex;
+  justify-content: center;
+  padding-top: 50px;
 }
 
 #third #p_wrapper {
@@ -432,6 +461,11 @@ body::-webkit-scrollbar-thumb{
   font-family: "Playfair Display", serif
 }
 
+#third #p #top h1::selection{
+  color: yellow;
+  background: #000;
+}
+
 #third #p #content #links {
   margin-top: 3vh;
 }
@@ -465,7 +499,7 @@ body::-webkit-scrollbar-thumb{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-bottom: 1px solid black;
+  
 }
 
 #fourth #righty p {
@@ -484,6 +518,7 @@ body::-webkit-scrollbar-thumb{
   font-weight: bold;
   font-family: "Sevillana", cursive;
 }
+ 
 
 #middle {
   display: flex;
