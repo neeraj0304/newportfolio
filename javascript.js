@@ -249,7 +249,7 @@ a.add("(max-width:1024px)", () => {
     scale: 0,
     scrollTrigger: {
       trigger: "#third h1",
-      markers: true,
+      
       start: "0% 100%",
       end: "50% 120%", 
       scrub: 1,
@@ -281,6 +281,23 @@ tl.from("#third #p_wrapper_second", {
     scrub: 1,
   },
 });
+ 
+
+a.add("(max-width:1024px)", () => {
+  tl.from("#third #p_wrapper_second", {
+    scale: 0,
+    opacity: 0,
+    x: 1000,
+    scrollTrigger: {
+      trigger: "#second",
+      markers: true,
+      start: "50% 50%",
+      end: "50% 50%",
+      scrub: 1,
+    },
+  });
+});
+
 
 tl.from("#fourth  #lefty h1", {
   x: 2000,
